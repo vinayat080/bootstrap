@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <!--This is related to responsive web design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- This bootsrap.min.css got downloaded via npn install 
+        we also need to include javascript file as well at botton of screen-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -95,7 +105,11 @@
            </div>
         </div>
     </footer>
-
+    <!-- check sequence jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- JS added at last so that CSS loads first and user no need to wait long-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
