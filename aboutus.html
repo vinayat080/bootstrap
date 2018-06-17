@@ -13,6 +13,10 @@
     <!-- This bootsrap.min.css got downloaded via npn install 
         we also need to include javascript file as well at botton of screen-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--Font awesome downloaded from external and installed in node modules-->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!--Bootstrap Social downloaded from external and installed in node modules-->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <!--custom css-->
     <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion: About Us</title>
@@ -35,10 +39,10 @@ use this class, the navbar also scrools when we scroll the page up/down-->
             <!--mu-auto is a utility class which allows us to specify the right margin, content will be moved left
             as much as possible in navigation bar-->
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>        
-                    <li class="nav-item active"><a class="nav-link" href="#">About</a></li>        
-                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>        
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>        
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><spam class="fa fa-home fa-lg"></spam> Home</a></li>        
+                    <li class="nav-item active"><a class="nav-link" href="#"><spam class="fa fa-info fa-lg"></spam> About</a></li>        
+                    <li class="nav-item"><a class="nav-link" href="#"><spam class="fa fa-list fa-lg"></spam> Menu</a></li>        
+                    <li class="nav-item"><a class="nav-link" href="#"><spam class="fa fa-address-card fa-lg"></spam> Contact</a></li>        
                 </ul>
             </div>
         </div>
@@ -112,21 +116,22 @@ use this class, the navbar also scrools when we scroll the page up/down-->
                     <address>
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                      HONG KONG<br>
+                      <!--Font awesome tag. we can used i tag instead of span as provided in Bootstrap -->
+		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
-                    </div>
+                        <div class="text-center">
+                                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                         </div>
                 </div>
            </div>
            <div class="row justify-content-center">             
