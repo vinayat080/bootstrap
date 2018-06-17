@@ -20,7 +20,29 @@
 </head>
 
 <body>
-
+<!--navbar-expand-sm - if screen is small and above, the navbar expand or if its extra small it collapse-->
+<!-- background primay is light blue by default-->
+<!--fixed-top it makes the nav bar on top even if we scrool the page up or down. if you dont
+use this class, the navbar also scrools when we scroll the page up/down-->
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <!--if you do not use the container class, then the nav spreads on entire width of page-->
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="./index.html">Ristorante Con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+            <!--mu-auto is a utility class which allows us to specify the right margin, content will be moved left
+            as much as possible in navigation bar-->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>        
+                    <li class="nav-item active"><a class="nav-link" href="#">About</a></li>        
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>        
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>        
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -35,7 +57,11 @@
     </header>
 
     <div class="container">
-        <div class="row row-header">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">About Us</li>
+            </ol>
             <div class="col-12">
                <h3>About Us</h3>
                <hr>
@@ -75,7 +101,7 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
